@@ -1,6 +1,6 @@
 # noteofl2b
-
-conda create -n l2b2 python=3.6
+ubuntu 18.04 //system version needed
+conda create -n l2b python=3.6
 conda install numpy
 //建议不要用其他命令装cmake
 pip install cmake
@@ -25,6 +25,10 @@ conda install git
 pip install git+https://github.com/ds4dm/PySCIPOpt.git@ml-branching
 conda install scikit-learn=0.20.2
 pip install git+https://github.com/jma127/pyltr@78fa0ebfef67d6594b8415aa5c6136e30a5e3395
+
+//install gcc4.8 and g++4.8 and change the prefered version to 4.8
+
+cd ..
 git clone https://github.com/ds4dm/PySVMRank.git
 cd PySVMRank
 wget http://download.joachims.org/svm_rank/current/svm_rank.tar.gz
@@ -33,4 +37,3 @@ tar -xzf svm_rank.tar.gz -C src/c
 pip install .//报错 collect2: error: ld returned 1 exit status    error: command 'gcc' failed with exit status 1
 conda install tensorflow-gpu=1.12.0
 
-//最后pySVMrank 没有安装成功 原因未知
